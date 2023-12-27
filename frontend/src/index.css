@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #e5e6e7;
+  position: relative;
+}
+
+.snow {
+  position: fixed;
+  top: -10%;
+  width: 0.4em;
+  height: 0.4em;
+  background: white;
+  border-radius: 50%;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.layer1 {
+  animation-duration: 6s;
+}
+
+.layer2 {
+  animation-duration: 8s;
+}
+
+.layer3 {
+  animation-duration: 10s;
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(120vh);
+  }
+}
+
+@font-face {
+  font-family: "KCCChassam";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Christmas";
+  src: url("./fonts/Christmas.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ChristmasBold";
+  src: url("./fonts/ChristmasBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-KCC {
+  font-family: "KCCChassam";
+}
+
+.font-Gangwon {
+  font-family: "GangwonEdu_OTFBoldA";
+}
+
+.font-Christmas {
+  font-family: "Christmas";
+}
+
+.font-ChristmasBold {
+  font-family: "ChristmasBold";
+}
