@@ -88,7 +88,7 @@ const Home: FC = () => {
     <>
       <PopupCenter />
       <div className="text-center font-ChristmasBold text-9xl mt-[50px] mb-10">
-        Merry Christmas 🎄
+        Happy Holidays 🎄
       </div>
       <div className="grow">
         <ul className="p-8 grid grid-cols-3 gap-8">
